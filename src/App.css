@@ -1,0 +1,164 @@
+.flex-with-gap-10 {
+  display: flex;
+  gap: 10px;
+}
+
+nav {
+  background-color: rgb(35, 94, 187);
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+}
+.top-nav {
+  width: 1000px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.top-nav-btn {
+  background-color: rgb(211, 223, 241);
+  width: fit-content;
+  color: black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.top-nav-btn:hover {
+  background-color: white;
+}
+
+.right-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+body {
+}
+
+.bottom-nav {
+  display: none;
+}
+
+.search-input {
+  padding: 5px;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.carousel-img {
+  background-image: url(https://www.wrg-ins.com/images/default-source/home-carousel-images/pl_home_carousel.jpg?sfvrsn=343bef27_3);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgb(235,235,235);
+}
+
+.form-wrapper-inner p {
+  color: gray;
+}
+
+.form-wrapper-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper-inner input {
+  padding: 10px;
+
+}
+.form-wrapper-inner > div {
+  border-bottom: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.go-btn {
+  background-color: rgb(35, 94, 187);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.go-btn:hover {
+  background-color: navy;
+}
+
+@media only screen and (min-width: 1100px) {
+  .bottom-nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(9, 10, 69);
+    color: white;
+  }
+  .top-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .carousel-img {
+    height: 600px;
+  }
+
+  .form-wrapper-inner {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 1000px;
+  }
+
+  .form-wrapper-inner > div {
+    border-right: 1px solid gray;
+    border-bottom: none;
+    padding: 40px;
+    justify-content: space-between;
+  }
+  .form-wrapper-inner > div:last-child {
+    border-right: none;
+
+  }
+
+}
